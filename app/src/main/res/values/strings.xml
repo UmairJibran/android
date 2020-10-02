@@ -5,5 +5,8 @@
     <string name="btn3">Button 3</string>
     <string name="btn4">Button 4</string>
     <string name="llwow">Linear Layout Without Weight</string>
-    <string name="llww">Linear Layout With Weight</string>
+    <string name="headingPH">Heading</string>
+    <string name="text1">Text 1</string>
+    <string name="text2">Text 2</string>
+    <string name="lipsem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
 </resources>
