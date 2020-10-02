@@ -4,16 +4,35 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     >
-    <Button
+    <TextView
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/llwow"
+        android:id="@+id/text1"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn1"
         android:id="@+id/btn1"
-        android:background="@color/btn1"/>
+        android:background="@color/btn1" />
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn2"
         android:id="@+id/btn2"
-        android:background="@color/btn2"/>
+        android:background="@color/btn2" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn3"
+        android:id="@+id/btn3"
+        android:background="@color/btn3" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn4"
+        android:id="@+id/btn4"
+        android:background="@color/btn4"/>
 </LinearLayout>

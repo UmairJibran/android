@@ -2,4 +2,8 @@
     <string name="app_name">Assignment1</string>
     <string name="btn1">Button 1</string>
     <string name="btn2">Button 2</string>
+    <string name="btn3">Button 3</string>
+    <string name="btn4">Button 4</string>
+    <string name="llwow">Linear Layout Without Weight</string>
+    <string name="llww">Linear Layout With Weight</string>
 </resources>
