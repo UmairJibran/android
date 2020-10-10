@@ -10,47 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="271dp"
-            android:layout_height="133dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_centerInParent="true"
-            android:layout_marginStart="67dp"
-            android:layout_marginTop="139dp"
-            android:layout_marginEnd="57dp"
-            android:text="Admit"
-            android:textColor="#3F51B5"
-            android:textSize="72sp" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="112dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="259dp"
-            android:layout_marginEnd="57dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Last Name"
-            android:textColor="#787878" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="112dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="67dp"
-            android:layout_marginTop="259dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="First Name"
-            android:textColor="#787878" />
-
         <EditText
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="239dp"
@@ -63,8 +22,23 @@
             android:layout_marginEnd="57dp"
             android:ems="10"
             android:inputType="textEmailAddress"
-            android:text="example@domain.com"
-            android:textColor="#B1B1B1" />
+            android:text="Please Enter Email"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="265dp"
+            android:layout_marginEnd="57dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="Please Enter Name"
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/editTextTextPassword"
@@ -78,35 +52,33 @@
             android:layout_marginEnd="57dp"
             android:ems="10"
             android:inputType="textPassword"
-            android:text="***********"
-            android:textColor="#B1B1B1" />
+            android:text="Please Enter Password"
+            android:textColor="#000000" />
 
         <Button
             android:id="@+id/button"
-            android:layout_width="wrap_content"
+            android:layout_width="173dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="463dp"
-            android:layout_marginEnd="57dp"
-            android:backgroundTint="#3F51B5"
-            android:text="Register"
-            android:textColor="#FFFFFF" />
+            android:layout_marginTop="418dp"
+            android:layout_marginEnd="101dp"
+            android:backgroundTint="#71AFBF"
+            android:text="sign up"
+            android:textColor="#FF0000"
+            android:textColorHighlight="#FFFFFF" />
 
-        <EditText
-            android:id="@+id/editTextDate"
-            android:layout_width="240dp"
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="223dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="67dp"
-            android:layout_marginTop="413dp"
-            android:layout_marginEnd="57dp"
-            android:ems="10"
-            android:inputType="date"
-            android:text="Date of Birth"
-            android:textColor="#AFADAD" />
+            android:layout_marginTop="112dp"
+            android:layout_marginEnd="81dp"
+            android:text="Register "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="50dp" />
 
     </RelativeLayout>
 </androidx.appcompat.widget.LinearLayoutCompat>
