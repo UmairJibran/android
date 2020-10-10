@@ -2,8 +2,8 @@ package com.example.labassignment1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -13,7 +13,7 @@ import static java.lang.Integer.parseInt;
 public class MainActivity extends AppCompatActivity {
 
     Button sumBtn;
-    EditText edtxt1,edtxt2,edtxt3;
+    EditText editText1,editText2, editText3;
     int num1 = 0,num2 = 0,num3 = 0,sum = 0;
 
     @Override
@@ -21,21 +21,29 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         sumBtn=findViewById(R.id.btnsum);
-        edtxt1=findViewById(R.id.editTextNumber);
-        edtxt2=findViewById(R.id.editTextNumber2);
-        edtxt3=findViewById(R.id.editTextNumber3);
+        editText1 =findViewById(R.id.editTextNumber);
+        editText2=findViewById(R.id.editTextNumber2);
+        editText3 =findViewById(R.id.editTextNumber3);
 
-        try {
-            num1 = Integer.parseInt(edtxt1.getText().toString(), 16);
-            num2 = Integer.parseInt(edtxt2.getText().toString(), 16);
-            num3 = Integer.parseInt(edtxt3.getText().toString(), 16);
-        }catch (NumberFormatException nfe){
-            System.out.println("Could not parse " + nfe);
-        }
-        sum = num1 + num2 + num3;
 
         sumBtn.setOnClickListener((view) ->  {
-            Toast.makeText(MainActivity.this,"Test" + sum,Toast.LENGTH_LONG).show();
+            try {
+                num1 = Integer.parseInt(editText1.getText().toString(), 10);
+                num2 = Integer.parseInt(editText2.getText().toString(), 10);
+                num3 = Integer.parseInt(editText3.getText().toString(), 10);
+            }catch (NumberFormatException nfe){
+                System.out.println("Could not parse " + nfe);
+            }
+            sum = num1 + num2 + num3;
+
+            Toast.makeText(MainActivity.this,""+sum,Toast.LENGTH_LONG).show();
+
+            Intent intent = new Intent(MainActivity.this,MainActivity2.class);
+            intent.putExtra("number1",""+num1);
+            intent.putExtra("number2",""+num2);
+            intent.putExtra("number3",""+num3);
+            intent.putExtra("sum",""+sum);
+            startActivity(intent);
         });
 
 
