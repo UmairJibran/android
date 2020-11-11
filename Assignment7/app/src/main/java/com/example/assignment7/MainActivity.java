@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
 
                 long startDate = date1.getTime();
                 long endDate = date2.getTime();
-                if(startDate <= endDate){
+                if(startDate >= endDate){
                     Period period = new Period(startDate, endDate, PeriodType.yearMonthDay());
                     int years = period.getYears();
                     int months = period.getMonths();
