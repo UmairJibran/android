@@ -8,8 +8,8 @@
 
     <EditText
         android:id="@+id/percentageOf"
-        android:layout_width="387dp"
-        android:layout_height="65dp"
+        android:layout_width="397dp"
+        android:layout_height="70dp"
         android:layout_marginTop="4dp"
         android:autofillHints="no"
         android:ems="10"
@@ -21,8 +21,8 @@
 
     <EditText
         android:id="@+id/bill"
-        android:layout_width="379dp"
-        android:layout_height="51dp"
+        android:layout_width="398dp"
+        android:layout_height="59dp"
         android:layout_marginTop="8dp"
         android:autofillHints="no"
         android:ems="10"
@@ -38,6 +38,24 @@
         android:layout_height="wrap_content"
         android:text="@string/calculate"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bill" />
+
+    <Button
+        android:id="@+id/increasePercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/increase"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bill" />
+
+    <Button
+        android:id="@+id/decreasePercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decrease"
+        app:layout_constraintEnd_toStartOf="@+id/calculateButton"
+        app:layout_constraintStart_toEndOf="@+id/increasePercentage"
         app:layout_constraintTop_toBottomOf="@+id/bill" />
 
     <TextView
