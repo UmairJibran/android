@@ -12,6 +12,9 @@ import com.google.android.gms.maps.model.MarkerOptions
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
+    private var userLat = 34.037459
+    private var userLong = 71.619355
+
     private lateinit var mMap: GoogleMap
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,8 +28,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 
-        val peshawar = LatLng(34.037459, 71.619355)
-        mMap.addMarker(MarkerOptions().position(peshawar).title("CUSIT, Peshawar"))
+        val peshawar = LatLng(userLat, userLong)
+
+        mMap.addMarker(MarkerOptions().position(peshawar).title("Your Location"))
+
         mMap.moveCamera(CameraUpdateFactory.newLatLng(peshawar))
     }
 }
